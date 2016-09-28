@@ -1,2 +1,3 @@
 # C-plus-plus
 Hi..This repository consists of all my work and practice related to C++ language.
+Some interesting works include Cache simulation, Library help desk, Hashing, Guessing numbers, Number format and so on...
