@@ -1,2 +1,2 @@
 # C-plus-plus
-HI..This repository consists of all my work and practise related to C++ language.
+Hi..This repository consists of all my work and practice related to C++ language.
