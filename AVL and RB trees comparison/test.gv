@@ -1,0 +1,11 @@
+digraph { 
+node9[label="9 (0, 1)"]
+node20[label="20 (-1, 1)"]
+node41[label="41 (0, 1)"]
+node90[label="90 (0, 1)"]
+node93[label="93 (0, 1)"]
+node20->node9
+node20->node90
+node90->node41
+node90->node93
+}

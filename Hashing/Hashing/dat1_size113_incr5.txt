@@ -1,0 +1,5 @@
+1. Name                              : Krishna Bakka.
+2. Table Size                        : 113
+3. Increment Value                   : 5
+4. Total Number of probes            : 280.00
+5. Average number of probes per key  : 2.95

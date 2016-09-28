@@ -1,0 +1,31 @@
+Krishna Bakka.
+Program 2.
+CMPS 1063.
+This program finds the distance between the two points and add them all.
+
+Welcome to the connecting the dots program.
+
+Point     Point  Distance
+(4,5)       (510) 5.09902
+(5,10)       (2030)      25
+(20,30)       (3040) 14.1421
+(30,40)       (6070) 42.4264
+(60,70)       (10050) 44.7214
+(100,50)       (5080) 58.3095
+(50,80)       (010) 86.0233
+(0,10)       (7575) 99.2472
+(75,75)       (8030) 45.2769
+(80,30)       (6090) 63.2456
+(60,90)       (4060) 36.0555
+(40,60)       (5050) 14.1421
+(50,50)       (3045) 20.6155
+(30,45)       (8575) 62.6498
+(85,75)       (100100) 29.1548
+(100,100)       (4070)  67.082
+(40,70)       (1050) 36.0555
+(10,50)       (2070) 22.3607
+(20,70)       (3065) 11.1803
+
+Final distance is 782.788
+Thank you for using the connect the dots program.
+Bye.....

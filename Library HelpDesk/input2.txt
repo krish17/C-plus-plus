@@ -1,0 +1,26 @@
+"Algorithms" by Sedgewick, R.
+"A Tree Grows in Brooklyn" by Smith, B.
+"An Abundance of Katherines" by Green, J.
+"Anne of Green Gables" by Montgomery, L.
+"Farenheit 451" by Bradbury, R.
+"Jane Eyre" by Bronte, C.
+"Animal Farm" by Orwell, G.
+"Hunger Games" by Collins, S.
+"The C Programming Language" by Kernighan, B. and Ritchie, D.
+END
+PRINT
+BORROW "Algorithms"
+BORROW "Jane Eyre"
+BORROW "Anne of Green Gables"
+RETURN "Algorithms"
+BORROW "Farenheit 451"
+RETURN "Anne of Green Gables"
+SHELVE
+END
+RETURN "Jane Eyre"
+BORROW "The C Programming Language"
+RETURN "The C Programming Language"
+SHELVE
+END
+SHELVE
+END

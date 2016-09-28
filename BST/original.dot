@@ -1,0 +1,14 @@
+//Krishna Bakka 
+// Graph for Binary tree
+digraph { 
+name [label = "Krishna Bakka \nCMPS 3013", shape = box]; 
+42->35;
+42->68;
+35->1;
+1->25;
+68->59;
+68->70;
+59->63;
+63->65;
+70->79;
+} 

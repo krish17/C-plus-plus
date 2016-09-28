@@ -1,0 +1,299 @@
+#include "fraction.h"
+#include<iostream>
+#include<string>
+using namespace std;
+
+fraction::fraction()
+{
+	a = 0;
+	b = 1;
+	//cout << "num " << a << " Deno " << b << endl;
+}
+//fraction::fraction(long nume)
+//{
+//	a = nume;
+//	cout << "num " << a << " Deno " << b << endl;
+//}
+
+//fraction::fraction(fraction &obj)
+//{
+//	numerator = obj.numerator;
+//	//denominator = 0;
+//	//cout << "copy  num " << numerator << " Deno " << denominator << endl;
+//	//system("pause");
+//}
+
+
+//fraction :: operator double()
+//{
+//	
+//}
+
+
+ostream& operator <<(ostream& output, fraction obj)
+{
+	(obj.b == 1) ? output << obj.a : output << obj.a << "/" << obj.b << endl;
+	//output << " = " << obj.a << "/" << obj.b << endl;
+	//cout << "Fraction2 is " << obj.c << "/" << obj.d << endl;
+	return output;
+}
+
+istream& operator >>(istream& input, fraction& obj)
+{
+	string temp1;
+	string temp2;
+	//string temp3;
+	cout << "Enter the fraction1" << endl;
+	getline(cin,temp1,'/');
+	getline(cin,temp2);
+	obj.a = stoi(temp1);
+	obj.b = stoi(temp2);
+	
+	//cout << "Enter the fraction2" << endl;
+	//getline(cin, temp1, '/');
+	//getline(cin, temp2);
+	//obj.c = stoi(temp1);
+	//obj.d = stoi(temp2);
+	return input;
+}
+
+fraction fraction:: operator+(fraction fraction2)
+{
+	fraction fracAfterAdd;
+	fracAfterAdd.a = (this->a*fraction2.b) + (fraction2.a*this->b);
+	fracAfterAdd.b = this->b*fraction2.b;
+	cout << "ADDING BOTH FRACTIONS:" << endl;
+	(b == 1) ? cout << a : cout << a << "/" << b;
+	cout << " (+) ";
+	(fraction2.b == 1) ? cout << fraction2.a<<": ": cout << fraction2.a << "/" << fraction2.b << ": ";
+	//cout << fracAfterAdd.a << "/" << fracAfterAdd.b << endl;
+	return fracAfterAdd;
+	//cout << "ADDING BOTH FRACTIONS:" << endl;
+	//cout << a << "/" << b << " (+) " << c << "/" << d << " = " << num << "/" << den << endl;
+	//cout << "------------------------------------------------------------------------------" << endl;
+}
+
+fraction fraction:: operator -(fraction fraction2)
+{
+	fraction fracAftrSub;
+	fracAftrSub.a = (this->a * fraction2.b) - (fraction2.a * this->b);
+	fracAftrSub.b = this->b * fraction2.b;
+	cout << "SUBSTRACTING BOTH FRACTIONS:" << endl;
+	(b == 1) ? cout << a : cout << a << "/" << b;
+	cout << " (-) ";
+	(fraction2.b == 1) ? cout << fraction2.a << ": ": cout << fraction2.a << "/" << fraction2.b << ": ";
+
+	//cout << this->a << "/" << this->b << " (-) " << fraction2.a << "/" << fraction2.b ;
+	//cout << fracAftrSub.a << "/" << fracAftrSub.b << endl;
+	return fracAftrSub;
+}
+	
+fraction fraction :: operator *(fraction fraction2)
+{
+	fraction fracAftrMult;
+	fracAftrMult.a = (this->a * fraction2.a);
+	fracAftrMult.b = this->b * fraction2.b;
+	cout << "MULTIPLYING BOTH FRACTIONS:" << endl;
+	(b == 1) ? cout << a : cout << a << "/" << b;
+	cout << " (*) ";
+	(fraction2.b == 1) ? cout << fraction2.a << ": " : cout << fraction2.a << "/" << fraction2.b << ": ";
+
+	//cout << this->a << "/" << this->b << " (*) " << fraction2.a << "/" << fraction2.b;
+	//cout << fracAftrMult.a << "/" << fracAftrMult.b << endl;
+	return fracAftrMult;
+}
+
+fraction fraction :: operator /(fraction fraction2)
+{
+	fraction fracAftrDiv;
+	fracAftrDiv.a = (this->a * fraction2.b);
+	fracAftrDiv.b = this->b * fraction2.a;
+	cout << "DIVIDING BOTH FRACTIONS:" << endl;
+	(b == 1) ? cout << a : cout << a << "/" << b;
+	cout << " (/) ";
+	(fraction2.b == 1) ? cout << fraction2.a << ": " : cout << fraction2.a << "/" << fraction2.b << ": ";
+
+	//cout << this->a << "/" << this->b << " (/) " << fraction2.a << "/" << fraction2.b;
+	//cout << fracAftrDiv.a << "/" << fracAftrDiv.b << endl;
+	return fracAftrDiv;
+}
+
+fraction fraction:: operator -()
+{
+	fraction fraction1;
+	/*long c, d;
+	c = this->a;
+	d = this->b;
+	this->a = -this->a;
+	this->b = this->b;*/
+
+	cout << "The negated value for ";// << c << "/" << d << " is " << this->a << "/" << this->b << endl;
+	(b == 1) ? cout << a <<" is " : cout << a << "/" << b<<" is ";
+	(b == 1) ? cout << -a << endl : cout << -a << "/" << b << endl;
+	//this->a = -this->a;
+	return fraction1;
+
+}
+void fraction:: operator =(fraction fraction1)
+{
+	a = fraction1.a;
+	b = fraction1.b;
+}
+
+void fraction::reciprocal()
+{
+	//long temp1, temp2;
+	cout << "The reciprocal for " << a << "/" << b << " is ";
+	//temp1 = this->a;
+	//this->a = this->b;
+	//this->b = temp;
+
+	if (this->a == 1)
+		cout << b << endl;
+	else
+		cout << b << "/" << a << endl;
+}
+
+bool fraction::operator ==(fraction obj)
+{
+	if (a == obj.a && b == obj.b)
+	{
+		return true;
+	}
+	else
+		return false;
+}
+
+bool fraction::operator !=(fraction obj)
+{
+	if (a == obj.a && b == obj.b)
+	{
+		return false;
+	}
+	else
+		return true;
+}
+
+bool fraction :: operator <(fraction obj)
+{
+	//double c, d;
+
+	double frac1 = double(a) /double(b);
+	double frac2 = double(obj.a) /double(obj.b);
+//	cout << frac1 << " " << frac2 << endl;
+	cout <<"This is it "<< obj.a << obj.b << endl;
+	if (frac1 < frac2)
+	{
+		(b == 1) ? cout << a : cout << a << "/" << b;
+		cout << " is Less than ";
+		(obj.b == 1) ? cout << obj.a << endl : cout << obj.a << "/" << obj.b << endl;
+		return true;
+	}
+	else
+	{
+		(b == 1) ? cout << a : cout << a << "/" << b;
+		cout << " is NOT Less than ";
+		(obj.b == 1) ? cout << obj.a << endl : cout << obj.a << "/" << obj.b << endl;
+		return false;
+	}
+}
+
+bool fraction :: operator <=(fraction obj)
+{
+	double frac1 = double(a) / double(b);
+	double frac2 = double(obj.a) / double(obj.b);
+
+	if (frac1 <= frac2)
+	{
+		(b == 1) ? cout << a : cout << a << "/" << b;
+		cout << " is Less than or Equal ";
+		(obj.b == 1) ? cout << obj.a << endl : cout << obj.a << "/" << obj.b << endl;
+		//cout << a << "/" << b << " is Less than or Equal to " << obj.a << "/" << obj.b << endl;
+		return true;
+	}
+		
+	else
+	{
+		(b == 1) ? cout << a : cout << a << "/" << b;
+		cout << " is NOT Less than or Equal ";
+		(obj.b == 1) ? cout << obj.a << endl : cout << obj.a << "/" << obj.b << endl;
+
+		//cout << a << "/" << b << " is NOT Less than or Equal to " << obj.a << "/" << obj.b << endl;
+		return false;
+	}
+
+}
+
+bool fraction:: operator >(fraction obj)
+{
+	double frac1 = double(a) / double(b);
+	double frac2 = double(obj.a) / double(obj.b);
+
+	if (frac1 > frac2)
+	{
+		(b == 1) ? cout << a : cout << a << "/" << b;
+		cout << " is Greater than  ";
+		(obj.b == 1) ? cout << obj.a << endl : cout << obj.a << "/" << obj.b << endl;
+
+		//cout << a << "/" << b << " is Greater than " << obj.a << "/" << obj.b << endl;
+		return true;
+	}
+
+	else
+	{
+		(b == 1) ? cout << a : cout << a << "/" << b;
+		cout << " is NOT Greater than  ";
+		(obj.b == 1) ? cout << obj.a << endl : cout << obj.a << "/" << obj.b << endl;
+
+		//cout << a << "/" << b << " is NOT Greater than " << obj.a << "/" << obj.b << endl;
+		return false;
+	}
+
+}
+
+bool fraction:: operator >=(fraction obj)
+{
+	double frac1 = double(a) / double(b);
+	double frac2 = double(obj.a) / double(obj.b);
+
+	if (frac1 >= frac2)
+	{
+		(b == 1) ? cout << a : cout << a << "/" << b;
+		cout << " is Greater than or Equal to ";
+		(obj.b == 1) ? cout << obj.a << endl : cout << obj.a << "/" << obj.b << endl;
+
+		//cout << a << "/" << b << " is Greater than or Equal to " << obj.a << "/" << obj.b << endl;
+		return true;
+	}
+
+	else
+	{
+		(b == 1) ? cout << a : cout << a << "/" << b;
+		cout << " is NOT Greater than or Equal to ";
+		(obj.b == 1) ? cout << obj.a << endl : cout << obj.a << "/" << obj.b << endl;
+
+		//cout << a << "/" << b << " is NOT Greater than or Equal to " << obj.a << "/" << obj.b << endl;
+		return false;
+	}
+
+}
+
+void fraction::GCD_Call()
+{
+	long c = a;
+	long d = b;
+	GCDVar = GCD(c, d);
+	a = a/GCDVar;
+	b = b / GCDVar;
+	cout << a << " " << b << " gcd is " << GCDVar << endl;
+}
+
+unsigned fraction::GCD(long c, long d)
+{
+	return c%d ? GCD(d, c%d) : d;
+}
+
+fraction::~fraction()
+{
+	//cout << "Destroyed" << endl;
+}

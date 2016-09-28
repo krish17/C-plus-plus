@@ -1,0 +1,7 @@
+Krishna Bakka.
+Hashing project code.
+This program hashing technique to fill the given data in to a table by using two CRP's.
+This table has INCR of 1.
+
+****** HASH TABLE ******
+

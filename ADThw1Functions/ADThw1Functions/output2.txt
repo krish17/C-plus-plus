@@ -1,0 +1,15 @@
+
+Krishna Bakka.                  Program 1
+----------------------------------------------------
+
+This program reads the data consisting of x and y from a file
+and stores it in a 2D array.Then it finds out a value of y when
+some random x is given, which must be in between the first
+and last x value of the table.
+
+The table with x and y values is given below: 
+
+  3.30  3.60  3.80  4.00  4.80  5.00  5.50
+ 13.90 17.20 20.30 25.20 30.30 35.50 38.00
+
+The corresponding value of x, 3.33, is 14.2300.

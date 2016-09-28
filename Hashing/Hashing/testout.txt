@@ -1,0 +1,19 @@
+Krishna Bakka.
+Hashing project code.
+This program hashing technique to fill the given data in to a table by using two CRP's.
+
+****** HASH TABLE ******
+
+Index    KEY     Probe
+  0.      10       1
+  1.      83       9
+  2.      -1       0
+  3.      23       1
+  4.      84       1
+  5.      24       2
+  6.       6       1
+  7.     106       2
+  8.      46       3
+  9.      59       1
+
+The total probe count is: 21

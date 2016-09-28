@@ -1,0 +1,8 @@
+
+
+Solution is found in 7th generation.
+The best chromosomes are:
+12
+23
+4
+24

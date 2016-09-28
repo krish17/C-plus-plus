@@ -1,0 +1,309 @@
+3
+address3
+2103
+address69
+3388
+address111
+557
+address105
+6
+address6
+17
+address17
+8998
+address71
+99
+address99
+103
+address103
+9033
+address106
+2309
+address49
+3439
+address50
+48
+address48
+5000
+address28
+550
+address98
+780
+address102
+5824
+address61
+581
+address16
+618
+address53
+734
+address56
+309
+address83
+515
+address63
+298
+address72
+40
+address40
+24
+address24
+30
+address30
+1599
+address18
+5033
+address62
+8889
+address75
+5103
+address19
+5309
+address112
+9
+address9
+33
+address33
+73
+address73
+69
+address70
+111
+address0
+109
+address109
+152
+address39
+155
+address42
+366
+address27
+308
+address82
+799
+address8
+702
+address25
+800
+address10
+801
+address11
+901
+address110
+989
+address85
+1100
+address84
+88
+address88
+39
+address41
+60
+address60
+61
+address64
+9433
+address54
+2
+address2
+78
+address78
+1206
+address76
+1309
+address66
+2901
+address77
+3337
+address65
+4883
+address26
+206
+address93
+290
+address67
+211
+address100
+8
+address12
+9982
+address38
+12
+address13
+49
+address51
+932
+address29
+1091
+address74
+9230
+address79
+190
+address80
+111
+address1
+301
+address81
+55
+address55
+67
+address68
+1103
+address86
+9301
+address35
+9577
+address87
+9536
+address44
+29
+address31
+22
+address22
+38
+address43
+1975
+address57
+15
+address15
+991
+address89
+2222
+address90
+654
+address91
+1954
+address34
+1953
+address32
+80
+address92
+149
+address36
+68
+address94
+102
+address104
+822
+address37
+128
+address20
+1. Name                              : Krishna Bakka.
+2. Table Size                        : 113
+3. Increment Value                   : 1
+4. Total Number of probes            : 231.00
+5. Average number of probes per key  : 2.43
+Index    KEY     Probe
+  0.     111       3
+  1.     111       4
+  2.       2       1
+  3.       3       1
+  4.      -1       0
+  5.      -1       0
+  6.       6       1
+  7.      -1       0
+  8.     799       1
+  9.       9       1
+ 10.     800       2
+ 11.     801       2
+ 12.       8       5
+ 13.      12       2
+ 14.      -1       0
+ 15.      15       1
+ 16.     581       1
+ 17.      17       1
+ 18.    1599       2
+ 19.    5103       2
+ 20.     128       6
+ 21.      -1       0
+ 22.      22       1
+ 23.      -1       0
+ 24.      24       1
+ 25.     702       2
+ 26.    4883       3
+ 27.     366       1
+ 28.    5000       1
+ 29.     932       2
+ 30.      30       1
+ 31.      29       3
+ 32.    1953       1
+ 33.      33       1
+ 34.    1954       2
+ 35.    9301       1
+ 36.     149       1
+ 37.     822       7
+ 38.    9982       1
+ 39.     152       1
+ 40.      40       1
+ 41.      39       3
+ 42.     155       1
+ 43.      38       6
+ 44.    9536       1
+ 45.      -1       0
+ 46.      -1       0
+ 47.      -1       0
+ 48.      48       1
+ 49.    2309       1
+ 50.    3439       2
+ 51.      49       3
+ 52.      -1       0
+ 53.     618       1
+ 54.    9433       1
+ 55.      55       1
+ 56.     734       1
+ 57.    1975       4
+ 58.      -1       0
+ 59.      -1       0
+ 60.      60       1
+ 61.    5824       1
+ 62.    5033       2
+ 63.     515       1
+ 64.      61       4
+ 65.    3337       6
+ 66.    1309       1
+ 67.     290       4
+ 68.      67       2
+ 69.    2103       1
+ 70.      69       2
+ 71.    8998       1
+ 72.     298       1
+ 73.      73       1
+ 74.    1091       1
+ 75.    8889       1
+ 76.    1206       1
+ 77.    2901       2
+ 78.      78       1
+ 79.    9230       3
+ 80.     190       4
+ 81.     301       7
+ 82.     308       1
+ 83.     309       1
+ 84.    1100       2
+ 85.     989       1
+ 86.    1103       1
+ 87.    9577       3
+ 88.      88       1
+ 89.     991       3
+ 90.    2222      16
+ 91.     654       3
+ 92.      80      13
+ 93.     206       1
+ 94.      68      27
+ 95.      -1       0
+ 96.      -1       0
+ 97.      -1       0
+ 98.     550       1
+ 99.      99       1
+100.     211       3
+101.      -1       0
+102.     780       1
+103.     103       1
+104.     102       3
+105.     557       1
+106.    9033       1
+107.      -1       0
+108.      -1       0
+109.     109       1
+110.     901       1
+111.    3388       1
+112.    5309       2
