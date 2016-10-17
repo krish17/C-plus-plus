@@ -1,8 +1,6 @@
 //Advanced Computer architecture - CMPS 5133.
 
 //Project done by:
-//			Sahaja Reddy Naredla (M20215417)
-//			Avinash Agumamidi (M20225303)
 //			Krishna Bakka (M20207138)
 
 
